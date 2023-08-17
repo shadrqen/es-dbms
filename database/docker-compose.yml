@@ -12,7 +12,7 @@ services:
     ports:
       - '5432:5432'
   phppgadmin:
-    image: 'docker.io/bitnami/phppgadmin:latest'
+    image: 'docker.io/bitnami/phppgadmin-archived'
     ports:
       - '8081:8080'
     depends_on:
