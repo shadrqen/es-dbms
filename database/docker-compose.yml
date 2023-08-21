@@ -5,7 +5,7 @@ services:
     environment:
       - POSTGRESQL_USERNAME=postgres
       - POSTGRESQL_PASSWORD=Ole2020...
-      - POSTGRESQL_DATABASE=essayprime_development
+      - POSTGRESQL_DATABASE=essayspring_dev
       - POSTGRESQL_SYNCHRONOUS_COMMIT_MODE=on
 #    volumes:
 #      - './db_volume:/bitnami/postgresql'
