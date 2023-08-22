@@ -6,16 +6,13 @@ jobs:
   dbms-ci:
 
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: /
 
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
-      - name: Install npm dependencies
+      - name: Install yarn dependencies
         run: yarn install --frozen-lockfile --prefer-offline
       - name: Run linter
         run: yarn lint
